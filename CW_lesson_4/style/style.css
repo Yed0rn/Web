@@ -1,0 +1,3 @@
+table{border-style: solid dashed; border-collapse:collapse}
+td{border:1px solid; width: 60px; height: 40px}
+tr{background: yellow; text-align: center; }
