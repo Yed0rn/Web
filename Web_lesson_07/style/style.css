@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background: #C9A5AA;
+}
+.site{
+    width:800px;
+    margin:64px auto;
+}
+a:link{
+    color:blue;
+}
+a:visited{
+    color:purple;
+}
+
+.navbar *{
+    width:100%;
+    background: white;
+
+}
+ul > li{
+    display:inline-block;
+}
+
