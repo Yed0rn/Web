@@ -2,20 +2,26 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/normaliser.css">
     <meta charset="UTF-8">
     <title></title>
 </head>
 <body>
 <header>
-    <h1>Форма прийому на роботу</h1>
-    <h2>ІТ Компанія "TechInnovate"</h2>
-    <p>Поля позначені синьою лінією є обов'язковими для заповнення</p>
+    <div class="wrapper">
+        <h1>Форма прийому на роботу</h1>
+        <h2>ІТ Компанія "TechInnovate"</h2>
+        <p>Поля позначені синьою лінією є обов'язковими для заповнення</p>
+    </div>
 </header>
 <main>
+    <div class="wrapper">
 
     <form>
         <h2>Персональні дані</h2>
+        <div class="grid">
         <label>
+
             Ім'я <br>
             <input type="text" name="name" placeholder="Введіть ваше ім'я">
         </label>
@@ -28,9 +34,13 @@
         <label>Телефон <br>
             <input type="tel" name="telephone" placeholder="+380 XX XXX XX XX">
         </label>
+            </div>
     </form>
     <form>
+        <div class="flex">
         <h2>Професійна інформація</h2>
+
+            <div class="flex_1">
         <label>
             Бажана позиція<br>
             <select name="position">
@@ -48,23 +58,29 @@
         <label>Досвід роботи (років)<br>
             <input type="number" name="time_worked" placeholder="0-50" min="0" max="50">
         </label>
+        </div>
         <label>Технології та навички<br>
             <input type="text" name="technologies" placeholder="React, TypeScript, Node.js, Python...">
         </label>
+        </div>
     </form>
     <form>
+        <div class="flex">
+        <div class="added-info">
         <h2>Додаткова інформація</h2>
+            <div class="flex_12">
         <label>
-            Телефон <br>
+            Github профіль <br>
             <input type="url" name="git" placeholder="https://github.com/username">
         </label>
         <label>
             Портфоліо<br>
             <input type="url" name="portfolio" placeholder="https://yourportfolio.com">
         </label>
+            </div>
         <label>
             Резюме (PDF, DOC)<br>
-            <input type="file" name="file" placeholder="Вибрати файл Файл не вибрано">
+            <input type="file" name="file" placeholder="Вибрати файл Файл не вибрано" class="input">
         </label>
         <label>
             Коротко про себе<br>
@@ -72,14 +88,22 @@
 
             </textarea>
         </label>
+        </div>
+        </div>
     </form>
-    <form>
+    <form class="check">
         <input type="checkbox" name="personal_data">
         <p>Я даю згоду на обробку персональних даних та підтверджую, що вся надана інформація є достовірною</p>
+
     </form>
-    <button type="submit">Надіслати заявку</button>
+        <div class="button">
+    <button type="submit" class="submit">Надіслати заявку</button>
+        </div>
+
+    </div>
 </main>
 <footer>
+    <div class="wrapper">
     <h3>💡 Підказки по заповненню:</h3>
     <ol>
         <li>✓ Зелена рамка — поле заповнено правильно</li>
@@ -87,6 +111,7 @@
         <li>→ Синя лінія зліва — обов'язкове поле</li>
         <li>↗ Наведіть курсор на поле для ефекту підсвічування</li>
     </ol>
+    </div>
 </footer>
 
 </body>
